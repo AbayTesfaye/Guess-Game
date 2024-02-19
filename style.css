@@ -1,119 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
-
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+.header {
+  background-color: rgb(44, 41, 41);
+  height: 200px;
 }
-
-body {
-  font-family: 'Press Start 2P', sans-serif;
-  color: #eee;
-  background-color: #222;
-  /* background-color: #60b347; */
-}
-
-/* LAYOUT */
-header {
-  position: relative;
-  height: 35vh;
-  border-bottom: 7px solid #eee;
-}
-
-main {
-  height: 65vh;
-  color: #eee;
+.top-header {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
-
-.left {
-  width: 52rem;
+.again {
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.between {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.title {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+}
+/* this is css for the main section */
+.main {
+  background-color: rgb(44, 41, 41);
+  margin-top: 10px;
+  height: 400px;
   display: flex;
   flex-direction: column;
+  row-gap: 100px;
   align-items: center;
 }
-
-.right {
-  width: 52rem;
-  font-size: 2rem;
-}
-
-/* ELEMENTS STYLE */
-h1 {
-  font-size: 4rem;
+.display {
+  /* border: 1px solid red; */
+  padding: 30px 50px;
+  margin-top: -60px;
+  background-color: white;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-
-.number {
-  background: #eee;
-  color: #333;
-  font-size: 6rem;
-  width: 15rem;
-  padding: 3rem 0rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
+.info-container {
+  width: 60%;
+  display: flex;
+  column-gap: 400px;
 }
-
-.between {
-  font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+.input-check {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  row-gap: 20px;
 }
-
-.again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-}
-
 .guess {
-  background: none;
-  border: 4px solid #eee;
-  font-family: inherit;
-  color: inherit;
-  font-size: 5rem;
-  padding: 2.5rem;
-  width: 25rem;
+  width: 150px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: bold;
   text-align: center;
-  display: block;
-  margin-bottom: 3rem;
 }
-
-.btn {
-  border: none;
-  background-color: #eee;
-  color: #222;
-  font-size: 2rem;
-  font-family: inherit;
-  padding: 2rem 3rem;
-  cursor: pointer;
+.check {
+  height: 50px;
+  width: 130px;
+  font-size: 20px;
+  font-weight: bold;
 }
-
-.btn:hover {
-  background-color: #ccc;
+.status-container {
+  /* border: 1px solid red; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
-
 .message {
-  margin-bottom: 8rem;
-  height: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 35px;
 }
-
-.label-score {
-  margin-bottom: 2rem;
+.score-par,
+.high-par {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 25px;
+}
+/* this the general css part */
+.btn:active {
+  background-color: rgb(0, 157, 255);
 }
